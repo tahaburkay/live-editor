@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      .preview {
+        height: 30vh;
+      }
+      .main {
+        height: 70vh;
+        background: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <div class="preview">
+        <div class="d-flex justify-content-end p-2">
+            <select id="history" class="m-2">
+                <option value="" selected>History</option>
+            </select>
+            <button id="saveButton" class="m-2">SAVE</button>
+        </div>  
+        <iframe id="preview-window"></iframe>
+    </div>
+    <div class="d-flex flex-column main">
+      <div class="d-flex justify-content-end p-2">
+          <button id="minimizeButton">Minimize</button>
+          <button id="runButton">Run</button>
+      </div>  
+      <div class="d-flex h-100 flex-row">
+        <textarea id="htmlCode" class="m-2 flex-fill p-2 rounded" placeholder="HTML Code"></textarea>
+        <textarea id="cssCode" class="m-2 flex-fill p-2 rounded" placeholder="CSS Code"></textarea>
+        <textarea id="jsCode" class="m-2 flex-fill p-2 rounded" placeholder="JavaScript Code"></textarea>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <script src="./template.js" type="text/javascript"></script>
+    <script src="./index.js" type="text/javascript"></script>
+  </footer>
+</html>
